@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/myApp.css" rel="stylesheet">
+    <script src="assets/libs/jquery-2.1.3.min.js"></script>
+    <script src="assets/libs/angular.min.js"></script>
+</head>
+<body background="assets/img/chopp.jpg">
+<div ng-app="raphaQuit">
+    <div class="main-container" role="main" ng-controller="mainController">
+        <div class="time-container">
+            <span class="time">{{days}}</span>
+        </div>
+        <div class="footer-container">
+            <div class="profile-container">
+                <div class="message-container" ng-show="showMessage">
+                    <img src="assets/img/profile.jpg">
+                    <h3>CHOPADA DO RAPHAEL. DESPEDIDA COM CHOPP LIBERADO!</h3>
+                </div>
+            </div>
+            <div class="icon-container">
+                <span class="icon-profile glyphicon glyphicon-user" ng-mouseenter="showMessageBox()"></span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="app/mainApp.js"></script>
+<script src="app/mainController.js"></script>
+
+<!-- LIBS -->
+<script src="assets/libs/countdown.min.js"></script>
+<script src="assets/libs/bootstrap.min.js"></script>
+<script src="assets/libs/ui-bootstrap-tpls-0.12.0.min.js"></script>
+
+</body>
+</html>
+
